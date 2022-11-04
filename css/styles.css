@@ -1,11 +1,9 @@
 main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   justify-content: center;
-  padding: 0 30px;
+  padding: 0 460px;
   text-align: center;
-  background-color: #000000;
   color: #5adbec;
   overflow: hidden;
 }
@@ -38,11 +36,17 @@ main {
 }
 
 .social a svg path {
-  fill: #1e1e1e;
+  fill: #fcfcfc;
 }
 
 a {
-  color: #1e1e1e;
+  color: #ffffff;
+}
+
+.container{
+  background-color: #ffffff;
+  display: flex;
+  padding: 0 460px;
 }
 
 @media (min-width: 575px) {
@@ -67,4 +71,8 @@ a {
   html {
     font-size: 20px;
   }
+}
+
+#textin {
+  color:#ffffff
 }

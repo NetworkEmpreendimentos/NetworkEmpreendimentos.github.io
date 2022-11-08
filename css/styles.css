@@ -1,16 +1,16 @@
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 460px;
-  text-align: center;
+  padding: 0 150px;
   color: #5adbec;
   overflow: hidden;
+  background-color: rgb(32, 32, 32);
 }
 
 .intro {
   font-size: 3.2rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .position {
@@ -28,6 +28,7 @@ main {
 
 .social {
   padding: 10px;
+  text-align: center;
 }
 
 .social i {
@@ -41,12 +42,6 @@ main {
 
 a {
   color: #ffffff;
-}
-
-.container{
-  background-color: #ffffff;
-  display: flex;
-  padding: 0 460px;
 }
 
 @media (min-width: 575px) {
@@ -74,5 +69,42 @@ a {
 }
 
 #textin {
-  color:#ffffff
+  color:#ffffff;
+  text-align: center;
+}
+
+.quem{
+  color: #5adbec;
+  font-size: 50px;
+  font-style: oblique;
+  margin-top: 20px;
+}
+
+#container{
+  background-color: #ffffff;
+  display: flex;
+  height: 100%;
+  padding: 100px 100px;
+  border-radius: 1%;
+}
+
+#p1{
+  border-radius: 100%;
+  width: 15%;
+  height: 25%;
+}
+
+.descricao{
+  width: 80%;
+  color: black;
+  padding-left: 30px;
+}
+
+#icones{
+  color: black;
+}
+
+.nomes{
+  font-size: x-large;
+  font-style: oblique;
 }

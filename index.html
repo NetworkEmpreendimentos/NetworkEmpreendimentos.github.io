@@ -28,10 +28,10 @@
 
       .b-example-divider {
         height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
+        background-color: rgb(0, 0, 0);
+        border: solid rgb(0, 0, 0);
         border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        box-shadow: inset 0 .5em 1.5em rgb(0, 0, 0), inset 0 .125em .5em rgb(0, 0, 0);
       }
 
       .b-example-vr {
@@ -65,16 +65,21 @@
       }
 
       #foto{
-        border-radius: 100%;
+        border-radius: 50%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
       }
 
+      #fundo{
+        background-color: black;
+      }
+
     </style>
   </head>
   <body>
-    
+ 
+<!--
 <header>
   <div class="collapse bg-dark" id="navbarHeader">
     <div class="container">
@@ -105,13 +110,14 @@
     </div>
   </div>
 </header>
+-->
 
-<main>
+<main id="fundo">
 
   <section class="py-5 text-center container" id="fundo">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <img src="./img/Logo.png" alt="logo", title="logo" width="300" height="300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24" >
+    <div class="row py-lg-5" id="fundo">
+      <div class="col-lg-6 col-md-8 mx-auto" id="fundo">
+        <img src="./img/Logo.png" alt="logo", title="logo" width="300" height="150" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24" >
         <br><br><br>
         <p class="text-muted">A cultura do empreendedorismo é algo bastante forte e presente na nossa 
           sociedade. Todos os dias, pessoas com mentes criativas e inovadoras 
@@ -119,17 +125,29 @@
           destacam no mercado. 
           Todavia, nem todos se jogam no cenário do empreendedorismo motivados
           pelos próprios sonhos.</p>
+          <br><br>
+        <h4 class="text-muted">Nossa missão:</h3>
+        <p class="text-muted">Fomentar o empreendedorismo de forma
+          colaborativa, para que cada empreendedor
+          transformem sonhos e ideias, em histórias de
+          sucesso.</p>
+
+        <h4 class="text-muted">Nossa visão:</h3>
+        <p class="text-muted">Desburocratizar o empreendedorismo e viabilizar a
+          relação entre possíveis empreendimentos e
+          investidores, Humanizando o ato de empreender,
+          com excelência, paixão e dedicação</p>
         <br><br>
-        <h3 class="fw-light">Conheça um pouco mais sobre cada membro:</h3>
+        <h3 class="text-muted">Conheça um pouco mais sobre cada membro:</h3>
       </div>
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-light" >
     <div class="container">  
         <div class="col">
           <div class="card shadow-sm">    
-            <img src="./img/antonio.jpg"  id="foto" alt="logo", title="logo" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Antonio</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+            <img src="./img/antonio.jpeg"  id="foto" alt="logo", title="logo" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Antonio</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">
             <div class="card-body">
               <p class="card-text">Antônio Teixeira, 25 anos, Advogado Empresarial, pós-graduando em Gestão, Crédito, cobrança e negócios, imigrante e apaixonado pelo empreendedorismo.
                 Iniciou sua jornada profissional como estagiário da Caixa Econômica Federal, no atendimento ao cliente, prospecção de novos investidores e ou poupadores, desenvolvia o auxílio a todos os procedimentos de elaboração de dossiês de clientes, visando segmentar uma carteira de acordo com o perfil de cada um.
@@ -155,18 +173,22 @@
        
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="mailto:networkempreendimentos.pt@gmail.com" class="text-white">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Instagram</button></a>
-                  <a href="https://api.whatsapp.com/send?phone=351934213819&text=Ol%C3%A1,%20Antonio" class="text-white">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Whatshapp</button></a>
-                  <a href="https://www.linkedin.com/in/antonio-teixeira-7a5686189" class="text-white">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">LinkedIn</button></a>
+            <img src="./img/Lucas.jpeg"  id="foto" alt="logo", title="logo" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Lucas</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+              <div class="card-body">
+                <p class="card-text">Lucas, 28 anos, empreendedor, formado em vendas e gestão comercial, apaixonado por vendas, trabalho em equipe e desenvolvimento pessoal
+                  Atua na área de vendas a 10 anos. Começou sua experiência com vendas externas trabalhando com produtos diversos e foi nesse trabalho externo que descobriu sua paixão por vendas. Atuou como vendedor inteiro em loja de varejo, foi promovido com um ano de atuação em seu primeiro trabalho em varejo para gerente comercial, 
+                  abriu empresa aos 24 anos e em sua segunda empresa no varejo, atuou como vendedor por 3 meses e foi promovido a instrutor de treinamento comercial. Ingressou um curso de 2.880 horas em vendas e gestão pela sucesso em vendas, foi mentor de 20 lojas em varejo onde atou por 2 anos.
+                  Atualmente reside em Portugal, atuando como consultor imobiliário. Tem como missão simplificar e melhorar todo processo de vendas de maneira objetiva e com técnica, acredita que o processo de vendas de uma empresa seja essencial para um negócio bem sucedido e apesar de parecer simples exigente técnica para ser saudável
+                  <br><br>
+                  <i>Uma pessoa que acredita nos seus sonhos e no potencial que cada pessoa tem guardado dentro de si e que pode ser liberado com o treinamento certo.</i></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="mailto:networkempreendimentos.pt@gmail.com" class="text-white">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Instagram</button></a>
+                    <a href="https://api.whatsapp.com/send?phone=351934213819&text=Ol%C3%A1,%20Antonio" class="text-white">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Whatshapp</button></a>
+                    <a href="https://www.linkedin.com/in/antonio-teixeira-7a5686189" class="text-white">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">LinkedIn</button></a>
                 </div>
               </div>
             </div>
@@ -175,7 +197,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./img/davi.jpg"  id="foto" alt="logo", title="logo" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Davi</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+            <img src="./img/davi.jpeg"  id="foto" alt="logo", title="logo" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Davi</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">
             <div class="card-body">
               <p class="card-text">Davi, 41 anos, Pai, Marido, Gestor Comercial, Professional, Life, Leader e Mentor coach, empreendedor obcecado pelo desenvolvimento humano.
                 Atua na área de desenvolvimento pessoal e profissional com mais de 20 anos, intensa vivência com processos de análise de mercado, criação de estratégias através de análise de resultados, experiente na condução de equipes a partir do estabelecimento de metas.                
@@ -247,18 +269,18 @@
 
 </main>
 
-<footer class="text-muted py-5">
-  <div class="container">
+<footer class="text-muted py-5" id="fundo">
+  <div class="container"  id="fundo">
     <p class="float-end mb-1">
       <a href="#">Voltar ao topo</a>
     </p>
-    <p class="mb-1">Network Empreendimentos</p>
+    <p class="mb-1">Entre em contato</p>
+        <li><a href="#" class="text-white">Facebook</a></li>
+        <li><a href="mailto:networkempreendimentos.pt@gmail.com" class="text-white">Email</a></li>
+        <li><a href="https://www.instagram.com/diordan.cardoso" class="text-white">Instagram</a></li>
+      </ul>
   </div>
 </footer>
-
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
+     
   </body>
 </html>
